@@ -1080,6 +1080,7 @@ class enrol_imsenterprise_testcase extends advanced_testcase {
         $filename = 'ims_' . rand(1000, 9999) . '.xml';
         $tmpdir = make_temp_directory('enrol_imsenterprise');
         $xmlfilepath = $tmpdir . '/' . $filename;
+        sleep(1);
         file_put_contents($xmlfilepath, $xmlcontent);
 
         // Setting the file path in CFG.
